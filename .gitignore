@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+pytest-cache-files-*/
+.coverage
+htmlcov/
+
+# Virtual env / uv
+.venv/
+.python-version
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project tmp / debug
+.tmp/
+*.log
+# output 策略：
+#   - 保留 final_script 真生成产物（评审硬要求的脚本+分镜）
+#   - 保留 recheck/compliance 质检留痕（证明「质检和兜底」环节真在跑）
+#   - 排除 sample_*（沙箱里手写的 mock 调试样本，跟交付无关）
+output/sample_*
+repo.bundle
+skills/mcn-script-assistant/mcn-script-assistant/

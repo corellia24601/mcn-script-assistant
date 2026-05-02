@@ -1,0 +1,140 @@
+{
+  "title": "今天睡到11点,凑活了一个完美早午饭",
+  "duration_seconds": 75,
+  "product_segment_duration_seconds": 22,
+  "non_ad_segments_duration_seconds": 53,
+  "body": [
+    {
+      "timestamp": "0-18s",
+      "segment_type": "reference_only",
+      "segment_label": "开场段(参考方向)",
+      "voiceover": "今天睡到11点自然醒,睁开眼发现阳台的多肉蔫了一棵,昨晚的快递还堆在门口没拆。我站在那看了大概三秒,决定先吃饭。冰箱里还有半颗苹果、俩鸡蛋,开始今天的早午饭工程。",
+      "shot_description": "开场快闪3切：①第三视角中景：博主从床上缓缓起身，窗帘漏进来一条光线 ②第一视角主观：拍向阳台蔫掉的多肉盆栽，手指戳了一下叶子 ③第三视角中景：走向门口一堆快递，踢了一脚没拆，转身走向厨房 ④第一视角主观：打开冰箱拍里面半颗苹果和俩鸡蛋",
+      "based_on_palette_item": "small_daily_incidents: 阳台的多肉今天好像有点蔫 + 早上发现昨晚的快递忘了拆 + food_scenarios: 切一个苹果做一个简单的水果碗"
+    },
+    {
+      "timestamp": "18-40s",
+      "segment_type": "core_delivery",
+      "segment_label": "产品植入段(核心交付)",
+      "voiceover": "我现在要把这个早午饭凑得像样一点。冰箱门后面发现了这个，叫轻醒，前两天随手买的，黄桃口味的希腊酸奶。挖一勺，是那种挖起来立着不塌的质感，酸度很柔，但奶味比我想象的厚。黄桃丁咬到的瞬间，有点像周二突然发现当天是周五。跟苹果块拼一起，凑了个水果碗，装大象，也就这两步。",
+      "shot_description": "①第一视角主观：从冰箱拿出产品，镜头拉近，包装正面清晰入框，文本框字幕浮出「轻醒·黄桃」②手部特写：用小勺挖一勺酸奶，勺子悬空展示质地，酸奶立着不滴落 ③第一视角主观：把酸奶和苹果块摆进碗里，镜头俯拍 ④第三视角中景：博主端着碗站在厨房窗边，低头吃了第一口，表情是那种「还行比我预期好」",
+      "transition_line": "我现在要把这个早午饭凑得像样一点",
+      "sensory_description": "「挖起来立着不塌的质感」（具体感官词：质地）+「酸度很柔但奶味比我想象的厚」（具体感官词：酸奶风味层次）+「黄桃丁咬到的瞬间，有点像周二突然发现当天是周五」（比喻：惊喜感）",
+      "action_shots": [
+        "从冰箱取出产品包装正面入镜",
+        "小勺挖一勺悬空展示不滴落的质地",
+        "苹果块+酸奶拼进碗里俯拍成品",
+        "端碗吃第一口的中景反应"
+      ]
+    },
+    {
+      "timestamp": "40-75s",
+      "segment_type": "reference_only",
+      "segment_label": "中后段(参考方向)",
+      "voiceover": "吃完决定去快递柜取快递，顺路看看有没有猫。穿上鞋出门，楼道里碰见一只橘猫蹲在消防箱上，我们互相看了对方三秒，它先移开了视线。快递柜有三个包裹，全是我忘了自己买了什么的那种。回来把多肉浇了点水，也不知道管不管用，先这样。计划赶不上变化，但凑了一个还不错的上午。",
+      "shot_description": "①第三视角中景：博主穿鞋准备出门，动作随意 ②第一视角主观：拍楼道里橘猫蹲在消防箱上，停顿两秒 ③第一视角主观：快递柜屏幕操作，取出三个大小不一的快递，塞在腋下 ④手部特写：给阳台多肉浇水，水从叶缝流下来 ⑤第三视角中景：博主靠在窗边，阳光打进来，画面停留2秒，自然结束",
+      "based_on_palette_item": "outdoor_micro_adventures: 去快递柜取快递顺路买根冰棍 + 在小区里给流浪猫拍照 + domestic_actions: 给绿植浇水修叶子"
+    }
+  ],
+  "ending_callback": {
+    "applicable_to": "凑活活留空",
+    "voiceover": ""
+  },
+  "compliance_notes": [
+    "口播中「轻醒」仅单独出现一次，不与「酸奶」「希腊酸奶」「高蛋白」连读，拍摄时请勿自行加上类目全称",
+    "「扛饿」「饱腹」相关词本脚本未使用，博主临场发挥时也请不要加入，避免功能性宣称风险",
+    "「黄桃丁咬到的瞬间，有点像周二突然发现当天是周五」这句口播为感官比喻，不涉及任何功效宣称，可正常使用",
+    "产品植入段请按脚本核心交付部分拍摄，包装正面需清晰入镜至少1秒，字幕「轻醒·黄桃」由后期字幕叠加，口播不需要念全称",
+    "博主调性部分（参考方向段）可按当天实际生活素材替换多肉/快递/橘猫等具体细节，保持松弛叙事节奏即可"
+  ],
+  "reasoning_check": {
+    "title_avoids_product_pointer": "标题「今天睡到11点，凑活了一个完美早午饭」指向状态和博主人设，无「这勺」「这一杯」「这罐」等产品指向代词",
+    "opening_no_product": "开场0-18秒口播围绕睡到11点、多肉、快递、冰箱食材展开，无产品指向；画面含冰箱内景但产品未拿出，品牌字样不可见，符合约束",
+    "no_brand_full_name_in_voiceover": "口播中仅出现「叫轻醒」（单独品牌名）和「黄桃口味的希腊酸奶」（品类描述不含品牌名），未出现「轻醒酸奶」「轻醒希腊酸奶」等连读全称",
+    "product_segment_within_30s": "核心交付段timestamp为18-40s，共22秒，≤30秒硬上限，符合约束",
+    "non_ad_segments_avoid_copying": "非广段取材自non_ad_content_palette：多肉蔫了、快递堆门口、取快递遇橘猫、给绿植浇水，均未复用原参考笔记的「米露/揉米/韩料店/冷冻麻辣烫/家乐麻酱拌面汁/星露谷挖野葱/煤矿森林/水晶手串」等已有场景",
+    "total_duration_60_to_90": "总时长75秒，在60-90秒范围内；产品段22秒+非广段53秒=75秒，比例合规"
+  },
+  "script_id": "d5a411ff",
+  "brand": "轻醒",
+  "creator": {
+    "id": "couhuohuo",
+    "display_name": "凑活活"
+  },
+  "generated_at": "2026-05-02T00:22:50.912806",
+  "storyboard": [
+    {
+      "shot_number": 1,
+      "duration_seconds": 9,
+      "segment_type": "参考方向",
+      "visual_description": "(参考方向) 开场快闪3切：①第三视角中景：博主从床上缓缓起身，窗帘漏进来一条光线 ②第一视角主观：拍向阳台蔫掉的多肉盆栽，手指戳了一下叶子 ③第三视角中景：走向门口一堆快递，踢了一脚没拆，转身走向厨房 ④第一视角主观：打开冰箱拍里面半颗苹果和俩鸡蛋",
+      "voiceover_or_subtitle": "今天睡到11点自然醒,睁开眼发现阳台的多肉蔫了一棵,昨晚的快递还堆在门口没拆。我",
+      "props_and_scene": "开场段(参考方向) / 取材自:small_daily_incidents: 阳台的多肉今天好像有点蔫 + 早上发现昨晚的快递忘了拆 + food_scenarios: 切一个苹果做一个简单的水果碗",
+      "shooting_difficulty": "低(博主可调整)"
+    },
+    {
+      "shot_number": 2,
+      "duration_seconds": 9,
+      "segment_type": "参考方向",
+      "visual_description": "(参考方向) 开场快闪3切：①第三视角中景：博主从床上缓缓起身，窗帘漏进来一条光线 ②第一视角主观：拍向阳台蔫掉的多肉盆栽，手指戳了一下叶子 ③第三视角中景：走向门口一堆快递，踢了一脚没拆，转身走向厨房 ④第一视角主观：打开冰箱拍里面半颗苹果和俩鸡蛋",
+      "voiceover_or_subtitle": "站在那看了大概三秒,决定先吃饭。冰箱里还有半颗苹果、俩鸡蛋,开始今天的早午饭工程。",
+      "props_and_scene": "开场段(参考方向) / 取材自:small_daily_incidents: 阳台的多肉今天好像有点蔫 + 早上发现昨晚的快递忘了拆 + food_scenarios: 切一个苹果做一个简单的水果碗",
+      "shooting_difficulty": "低(博主可调整)"
+    },
+    {
+      "shot_number": 3,
+      "duration_seconds": 3,
+      "segment_type": "核心交付",
+      "visual_description": "博主从原本场景自然过渡到产品场景(打开冰箱/走到厨房等)",
+      "voiceover_or_subtitle": "我现在要把这个早午饭凑得像样一点",
+      "props_and_scene": "过渡场景 + 轻醒酸奶就位",
+      "shooting_difficulty": "低"
+    },
+    {
+      "shot_number": 4,
+      "duration_seconds": 5,
+      "segment_type": "核心交付",
+      "visual_description": "拿出产品 + 包装特写(品牌字样可见) + 勺子挖一勺立着不滴",
+      "voiceover_or_subtitle": "「挖起来立着不塌的质感」（具体感官词：质地）+「酸度很柔但奶味比我想象的厚」（具体感官词：酸奶风味层次）+「黄桃丁咬到的瞬间，有点像周二突然发现当天是周五」（比喻：惊喜感）",
+      "props_and_scene": "轻醒酸奶 + 勺子 + 干净背景",
+      "shooting_difficulty": "中(需要质地慢镜头)"
+    },
+    {
+      "shot_number": 5,
+      "duration_seconds": 14,
+      "segment_type": "核心交付",
+      "visual_description": "从冰箱取出产品包装正面入镜 / 小勺挖一勺悬空展示不滴落的质地 / 苹果块+酸奶拼进碗里俯拍成品",
+      "voiceover_or_subtitle": "我现在要把这个早午饭凑得像样一点。冰箱门后面发现了这个，叫轻醒，前两天随手买的，黄桃口味的希腊酸奶。挖一勺，是那种挖起来立着不塌的质感，酸度很柔，但奶味比我想象的厚。黄桃丁咬到的瞬间，有点像周二突然发现当天是周五。跟苹果块拼一起，凑了个水果碗，装大象，也就这两步。",
+      "props_and_scene": "博主当下场景",
+      "shooting_difficulty": "低"
+    },
+    {
+      "shot_number": 6,
+      "duration_seconds": 17,
+      "segment_type": "参考方向",
+      "visual_description": "(参考方向) ①第三视角中景：博主穿鞋准备出门，动作随意 ②第一视角主观：拍楼道里橘猫蹲在消防箱上，停顿两秒 ③第一视角主观：快递柜屏幕操作，取出三个大小不一的快递，塞在腋下 ④手部特写：给阳台多肉浇水，水从叶缝流下来 ⑤第三视角中景：博主靠在窗边，阳光打进来，画面停留2秒，自然结束",
+      "voiceover_or_subtitle": "吃完决定去快递柜取快递，顺路看看有没有猫。穿上鞋出门，楼道里碰见一只橘猫蹲在消防箱上，我们互相看了对方三秒，它先移开了视线。快递",
+      "props_and_scene": "中后段(参考方向) / 取材自:outdoor_micro_adventures: 去快递柜取快递顺路买根冰棍 + 在小区里给流浪猫拍照 + domestic_actions: 给绿植浇水修叶子",
+      "shooting_difficulty": "低(博主可调整)"
+    },
+    {
+      "shot_number": 7,
+      "duration_seconds": 17,
+      "segment_type": "参考方向",
+      "visual_description": "(参考方向) ①第三视角中景：博主穿鞋准备出门，动作随意 ②第一视角主观：拍楼道里橘猫蹲在消防箱上，停顿两秒 ③第一视角主观：快递柜屏幕操作，取出三个大小不一的快递，塞在腋下 ④手部特写：给阳台多肉浇水，水从叶缝流下来 ⑤第三视角中景：博主靠在窗边，阳光打进来，画面停留2秒，自然结束",
+      "voiceover_or_subtitle": "柜有三个包裹，全是我忘了自己买了什么的那种。回来把多肉浇了点水，也不知道管不管用，先这样。计划赶不上变化，但凑了一个还不错的上午。",
+      "props_and_scene": "中后段(参考方向) / 取材自:outdoor_micro_adventures: 去快递柜取快递顺路买根冰棍 + 在小区里给流浪猫拍照 + domestic_actions: 给绿植浇水修叶子",
+      "shooting_difficulty": "低(博主可调整)"
+    }
+  ],
+  "compliance_report": {
+    "compliance_status": "通过",
+    "extreme_words_hits": [],
+    "medical_implication_hits": [],
+    "structural_constraint_hits": [],
+    "llm_judge_score": null,
+    "recommendations": [
+      "脚本通过 4 层质检,可以提交给博主拍摄"
+    ]
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "title": "今天7点自己醒了,还有比这更好的事吗",
+  "duration_seconds": 60,
+  "product_segment_duration_seconds": 25,
+  "non_ad_segments_duration_seconds": 35,
+  "body": [
+    {
+      "timestamp": "0-12s",
+      "segment_type": "reference_only",
+      "segment_label": "开场段(参考方向)",
+      "voiceover": "今天闹钟还没响我就醒了——这种事情发生在周三早上,感觉像系统突然给我发了一个隐藏成就",
+      "shot_description": "快剪5个镜头:①走廊走路前置自拍上半身②手机屏幕显示6:58闹钟没响近景③对镜梳头发时表情戏剧化一愣④工位键盘特写⑤从冰箱拿东西的背影(产品拉远到看不清字)。配网络动感BGM,无画外音解说感,纯剪辑节奏。",
+      "based_on_palette_item": "morning_segment_alternatives: 早晨闹钟前自然醒 vs 闹钟逼醒的对比戏"
+    },
+    {
+      "timestamp": "12-37s",
+      "segment_type": "core_delivery",
+      "segment_label": "产品植入段(核心交付)",
+      "voiceover": "好,我现在要在冰箱里找到我的早餐——黄桃口味的那个。挖开盖子的瞬间,酸奶是真的稠,挖一勺立在那里不倒,酸度柔但奶味厚,黄桃丁咬下去那一秒甜味就出来了——有点像周三早上突然收到一个「今天下午会议取消」的消息。叫轻醒,名字起得还挺准的。",
+      "shot_description": "①前置自拍走向冰箱,嘴里还在说话②打开冰箱,手伸进去拿出产品,包装朝镜头但不强调字样③坐到早餐桌前,产品包装正面给1秒字幕浮出品牌名④挖一勺酸奶特写:勺子立着不塌2秒⑤送入口中前置自拍,表情夸张停顿⑥咬到黄桃丁眼睛微眯,脸部轻度变形滤镜⑦2秒插入手机屏幕上「会议已取消」通知画面作画中画比喻",
+      "transition_line": "好,我现在要在冰箱里找到我的早餐",
+      "sensory_description": "挖一勺立在那里不倒(具体感官质感词);黄桃丁咬下去那一秒甜味就出来了——像周三早上收到「今天下午会议取消」的消息(比喻+身体感受)",
+      "action_shots": [
+        "打开冰箱取出产品",
+        "挖一勺酸奶立起不塌的特写",
+        "送入口中表情夸张定格+脸部变形滤镜"
+      ]
+    },
+    {
+      "timestamp": "37-60s",
+      "segment_type": "reference_only",
+      "segment_label": "上班段+下班前段(参考方向)",
+      "voiceover": "通勤路上把一个PPT的标题改了八遍——结果改完忘了存档，又改了一遍，这种循环大概是摸鱼时刻的标配。下午三点空调冷到我以为自己在给服务器当散热片，整个人「肉体在工位灵魂在外太空」。但是——肚子没饿。",
+      "shot_description": "①地铁里前置自拍，手指滑手机做小动作，表情严肃但又有戏②工位键盘打字特写，键盘旁咖啡杯雾气往上飘③会议室镜头：博主坐在角落表情呆滞+文字字幕「灵魂在外太空」④前置自拍说「但是——肚子没饿」表情故意停顿一下",
+      "based_on_palette_item": "workplace_segment_alternatives: 改PPT改到第8版的精神状态 + 下午3点会议室的内心戏"
+    }
+  ],
+  "ending_callback": {
+    "applicable_to": "Catherine 必填",
+    "voiceover": "下班路上没去排奶茶队,大概是早上那勺酸奶还在帮我撑场子。"
+  },
+  "compliance_notes": [
+    "拍摄时避免说「饱腹感」「撑着不饿」等孤立使用,保持脚本里「肚子没饿」的自然叙述语气",
+    "产品包装特写镜头里不要对着镜头念「0蔗糖」「高蛋白」等字样,包装露出自然带过即可",
+    "画外音口播中不要临时加入「轻醒酸奶」连读全称,品牌名保持脚本里的「叫轻醒」单独表达",
+    "「黄桃丁咬下去」描述感官时不要延伸到「低卡」「不长胖」等功能性宣称",
+    "结尾回扣口播「撑场子」是戏谑语气,拍摄时不要改成「饱腹感超强」类功能性措辞"
+  ],
+  "reasoning_check": {
+    "title_avoids_product_pointer": "标题「今天7点自己醒了,还有比这更好的事吗」指向情绪和时间状态,无「这勺」「这一杯」「这罐」类产品指向词",
+    "opening_no_product": "开场12秒前2个分镜为走廊自拍+闹钟特写,产品仅在第5镜以背景远景出现且拉远看不清字,口播无任何指向产品的表达",
+    "no_brand_full_name_in_voiceover": "口播中品牌名仅出现「叫轻醒」单独形式,无「轻醒酸奶」「轻醒希腊酸奶」等品牌+品类连读",
+    "product_segment_within_30s": "core_delivery段落时间戳12-37s,共25秒,符合≤30秒硬约束",
+    "non_ad_segments_avoid_copying": "非广段取材自palette中「改PPT改到第8版」「下午3点会议室内心戏」「闹钟前自然醒对比」三个新场景,未使用原参考笔记的「写脑爆材料/左右脑互搏/魔大食堂/泰式按摩」等已有场景",
+    "total_duration_60_to_90": "总时长=开场12s+植入25s+中后段33s+结尾回扣5s=75秒,在60-90秒范围内",
+    "voiceover_density_matches_timestamp": "已收紧 body[2] 至 23 秒，去除职位 leak 「产品经理」，新口播约 110 字密度 4.8 字/秒",
+    "no_workplace_screen_content": "(Catherine 限定) shot_description 已去除「屏幕上 PPT 字幕飘过」，工位画面只拍键盘/咖啡杯/手部，无屏幕具体内容"
+  },
+  "script_id": "27a2affa",
+  "brand": "轻醒",
+  "creator": {
+    "id": "catherine_xiaoxiong",
+    "display_name": "Catherine是小熊"
+  },
+  "generated_at": "2026-05-02T00:03:39.964763",
+  "storyboard": [
+    {
+      "shot_number": 1,
+      "duration_seconds": 12,
+      "segment_type": "参考方向",
+      "visual_description": "(参考方向) 快剪5个镜头:①走廊走路前置自拍上半身②手机屏幕显示6:58闹钟没响近景③对镜梳头发时表情戏剧化一愣④工位键盘特写⑤从冰箱拿东西的背影(产品拉远到看不清字)。配网络动感BGM,无画外音解说感,纯剪辑节奏。",
+      "voiceover_or_subtitle": "今天闹钟还没响我就醒了——这种事情发生在周三早上,感觉像系统突然给我发了一个隐藏成就",
+      "props_and_scene": "开场段(参考方向) / 取材自:morning_segment_alternatives: 早晨闹钟前自然醒 vs 闹钟逼醒的对比戏",
+      "shooting_difficulty": "低(博主可调整)"
+    },
+    {
+      "shot_number": 2,
+      "duration_seconds": 3,
+      "segment_type": "核心交付",
+      "visual_description": "博主从原本场景自然过渡到产品场景(打开冰箱/走到厨房等)",
+      "voiceover_or_subtitle": "好,我现在要在冰箱里找到我的早餐",
+      "props_and_scene": "过渡场景 + 轻醒酸奶就位",
+      "shooting_difficulty": "低"
+    },
+    {
+      "shot_number": 3,
+      "duration_seconds": 5,
+      "segment_type": "核心交付",
+      "visual_description": "拿出产品 + 包装特写(品牌字样可见) + 勺子挖一勺立着不滴",
+      "voiceover_or_subtitle": "挖一勺立在那里不倒(具体感官质感词);黄桃丁咬下去那一秒甜味就出来了——像周三早上收到「今天下午会议取消」的消息(比喻+身体感受)",
+      "props_and_scene": "轻醒酸奶 + 勺子 + 干净背景",
+      "shooting_difficulty": "中(需要质地慢镜头)"
+    },
+    {
+      "shot_number": 4,
+      "duration_seconds": 17,
+      "segment_type": "核心交付",
+      "visual_description": "打开冰箱取出产品 / 挖一勺酸奶立起不塌的特写 / 送入口中表情夸张定格+脸部变形滤镜",
+      "voiceover_or_subtitle": "好,我现在要在冰箱里找到我的早餐——黄桃口味的那个。挖开盖子的瞬间,酸奶是真的稠,挖一勺立在那里不倒,酸度柔但奶味厚,黄桃丁咬下去那一秒甜味就出来了——有点像周三早上突然收到一个「今天下午会议取消」的消息。叫轻醒,名字起得还挺准的。",
+      "props_and_scene": "博主当下场景",
+      "shooting_difficulty": "低"
+    },
+    {
+      "shot_number": 5,
+      "duration_seconds": 16,
+      "segment_type": "参考方向",
+      "visual_description": "(参考方向) ①地铁里前置自拍,手滑手机改PPT,表情严肃②工位键盘打字特写,屏幕上PPT字幕飘过③会议室镜头:博主坐在角落表情呆滞+文字字幕「灵魂在外太空」④前置自拍说「但是——肚子没饿」表情故意停顿一下",
+      "voiceover_or_subtitle": "通勤路上我改了个PPT的标题,改了八个字,发出去,产品经理回了个「ok」——我的左手已经在打下一个版本了。下",
+      "props_and_scene": "上班段+下班前段(参考方向) / 取材自:workplace_segment_alternatives: 改PPT改到第8版的精神状态 + 下午3点会议室的内心戏",
+      "shooting_difficulty": "低(博主可调整)"
+    },
+    {
+      "shot_number": 6,
+      "duration_seconds": 16,
+      "segment_type": "参考方向",
+      "visual_description": "(参考方向) ①地铁里前置自拍,手滑手机改PPT,表情严肃②工位键盘打字特写,屏幕上PPT字幕飘过③会议室镜头:博主坐在角落表情呆滞+文字字幕「灵魂在外太空」④前置自拍说「但是——肚子没饿」表情故意停顿一下",
+      "voiceover_or_subtitle": "午三点空调冷到我以为自己在给服务器当散热片,整个人处于一种「肉体在工位灵魂在外太空」的状态。但是——肚子没饿。",
+      "props_and_scene": "上班段+下班前段(参考方向) / 取材自:workplace_segment_alternatives: 改PPT改到第8版的精神状态 + 下午3点会议室的内心戏",
+      "shooting_difficulty": "低(博主可调整)"
+    },
+    {
+      "shot_number": 7,
+      "duration_seconds": 5,
+      "segment_type": "核心交付",
+      "visual_description": "嵌入结尾的产品轻量回扣(可以是包里随手拿出产品晃一下)",
+      "voiceover_or_subtitle": "下班路上没去排奶茶队,大概是早上那勺酸奶还在帮我撑场子。",
+      "props_and_scene": "博主结尾场景 + 轻醒罐子",
+      "shooting_difficulty": "低"
+    }
+  ],
+  "compliance_report": {
+    "compliance_status": "通过",
+    "extreme_words_hits": [],
+    "medical_implication_hits": [],
+    "structural_constraint_hits": [],
+    "llm_judge_score": null,
+    "recommendations": [
+      "脚本通过 4 层质检,可以提交给博主拍摄"
+    ]
+  }
+}

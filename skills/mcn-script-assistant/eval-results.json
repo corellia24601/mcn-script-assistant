@@ -1,0 +1,94 @@
+{
+  "skill_name": "mcn-script-assistant",
+  "version": "1.0",
+  "description": "用于验证 Skill 触发准确性的 eval queries。should_trigger 表示该 query 应触发 Skill,should_not_trigger 表示应该跳过,使用通用对话能力即可。",
+  "should_trigger": [
+    {
+      "query": "帮我写一个小红书脚本,推希腊酸奶,博主是 Catherine是小熊",
+      "rationale": "明确提到「小红书脚本」+ 品牌产品 + 博主名,核心触发场景"
+    },
+    {
+      "query": "我有一个 MCN 商单,需要给凑活活写一条 60 秒的种草脚本",
+      "rationale": "「MCN 商单」+「种草脚本」+ 博主名,完整触发条件"
+    },
+    {
+      "query": "帮我做一份达人脚本和分镜",
+      "rationale": "「达人脚本」+「分镜」是 Skill description 中明确列出的触发词"
+    },
+    {
+      "query": "客户 brief 我贴在下面了,需要 2 条小红书短视频脚本",
+      "rationale": "「brief」+「小红书短视频脚本」组合,典型 MCN 商单场景"
+    },
+    {
+      "query": "投放小红书的酸奶商单怎么写脚本",
+      "rationale": "「投放」+「商单」+「脚本」核心触发"
+    },
+    {
+      "query": "给我生成一份希腊酸奶的种草脚本,需要符合广告法",
+      "rationale": "「种草脚本」+ 合规约束,是本 Skill 的核心场景"
+    },
+    {
+      "query": "已选博主是凑活活,产品是 0 蔗糖酸奶,出脚本",
+      "rationale": "已选博主 + 产品 + 「出脚本」,符合 Skill 输入模式"
+    },
+    {
+      "query": "我把 brief.md 上传了,需要按 Catherine 的风格生成脚本",
+      "rationale": "上传 brief 文档触发 + 博主风格化生成"
+    },
+    {
+      "query": "做一份达人投放脚本,要包含分镜和合规检查",
+      "rationale": "「达人投放脚本」+ 分镜 + 合规,Skill 完整功能调用"
+    },
+    {
+      "query": "帮我把这个产品的卖点改写成博主的语气,适合小红书短视频",
+      "rationale": "「博主的语气」+「小红书短视频」,触发风格化生成"
+    },
+    {
+      "query": "给我做个酸奶的种草脚本,要带分镜和飞书写入",
+      "rationale": "种草脚本 + 分镜 + 飞书,触发完整 Skill 6 步流程"
+    },
+    {
+      "query": "我们要做一个 MCN 项目,产品是希腊酸奶,需要 2 条达人脚本",
+      "rationale": "MCN 项目 + 达人脚本,核心触发场景"
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "query": "希腊酸奶和普通酸奶有什么区别",
+      "rationale": "纯知识问答,不涉及脚本生成"
+    },
+    {
+      "query": "帮我写一篇关于健康饮食的公众号文章",
+      "rationale": "公众号文章 ≠ 小红书短视频脚本,平台和格式都不同"
+    },
+    {
+      "query": "推荐几个小红书博主给我",
+      "rationale": "博主推荐是调研环节,不是脚本生成,不应触发本 Skill"
+    },
+    {
+      "query": "0 蔗糖酸奶的市场前景如何",
+      "rationale": "市场分析,跟脚本生成无关"
+    },
+    {
+      "query": "帮我给客户写一份 MCN 项目方案",
+      "rationale": "项目方案 ≠ 脚本,虽然有「MCN」但不应触发(应该是营销策划类 Skill)"
+    },
+    {
+      "query": "怎么做希腊酸奶碗,给我个食谱",
+      "rationale": "食谱请求,跟商单脚本无关"
+    },
+    {
+      "query": "Catherine是小熊的真实身份是谁",
+      "rationale": "博主身份查询,不是脚本生成场景"
+    },
+    {
+      "query": "帮我写一条抖音直播脚本",
+      "rationale": "抖音 + 直播 ≠ 小红书短视频笔记,Skill 适用场景外"
+    }
+  ],
+  "evaluation_protocol": {
+    "trigger_accuracy_target": "should_trigger ≥10/12 命中,should_not_trigger ≥7/8 不触发",
+    "self_check_method": "在 Claude.ai 中粘贴 SKILL.md,然后逐条测试 query,记录是否正确触发",
+    "next_action_if_fail": "调整 SKILL.md frontmatter 的 description 字段,加强触发词的覆盖或排除"
+  }
+}

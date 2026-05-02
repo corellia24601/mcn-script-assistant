@@ -1,0 +1,27 @@
+%% MCN 脚本助手 · 端到端工作流
+%% 灰色块 = 人工，蓝色 = Coze 工作流，紫色 = 本仓库 Skill 脚本，绿色 = 飞书
+
+flowchart TD
+    A[轻醒酸奶 Brief] -->|结构化拆解| B[references/brief.md]
+    BL[博主调研截图与笔记] -->|人工总结| C[references/blogger-*.md]
+    B --> D{Coze 工作流}
+    C --> D
+    D -->|DeepSeek-V3 生成| E[原始脚本 JSON 数组]
+    E --> F[risk_check.py<br/>违禁词扫描 + 正则]
+    F -->|可选| G[LLM-as-Judge<br/>claude-haiku-4-5]
+    G --> H{是否命中 H 级?}
+    F --> H
+    H -- 是 --> I[退回 Coze 改写节点]
+    I --> D
+    H -- 否 --> J[飞书写入 add_records<br/>--commit]
+    J --> K[飞书多维表格<br/>评审查看入口]
+
+    classDef human fill:#eeeeee,stroke:#999,color:#222;
+    classDef coze fill:#dbeafe,stroke:#1d4ed8,color:#1e3a8a;
+    classDef skill fill:#ede9fe,stroke:#6d28d9,color:#3b0764;
+    classDef feishu fill:#dcfce7,stroke:#16a34a,color:#14532d;
+
+    class A,BL,C,B human;
+    class D,E,I coze;
+    class F,G,H skill;
+    class J,K feishu;

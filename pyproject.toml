@@ -1,0 +1,22 @@
+[project]
+name = "mcn-script-assistant"
+version = "0.1.0"
+description = "MCN script assistant - short video script generation skill"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.32",
+    "python-dotenv>=1.0",
+    "pydantic>=2.7",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pytest-mock>=3.12",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# scripts 目录以 mcn-script-assistant（含 -）开头，用 pythonpath 让测试直接 import schemas/risk_check
+pythonpath = [".", "skills/mcn-script-assistant/scripts"]
+addopts = "-q"

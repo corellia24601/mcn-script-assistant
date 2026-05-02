@@ -1,0 +1,227 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MCN 小红书短视频脚本输出 Schema",
+  "description": "本 Schema 定义 mcn-script-assistant Skill 的标准输出结构,所有下游工具(飞书写入、质检脚本、人工 review)消费的都是符合此 Schema 的 JSON。",
+  "type": "object",
+  "required": [
+    "script_id",
+    "brand",
+    "creator",
+    "title",
+    "hook",
+    "body",
+    "product_insertion",
+    "cta",
+    "compliance_notes",
+    "storyboard",
+    "compliance_report"
+  ],
+  "properties": {
+    "script_id": {
+      "type": "string",
+      "description": "UUID,用于飞书表格唯一标识"
+    },
+    "brand": {
+      "type": "string",
+      "description": "品牌名,如「轻醒」"
+    },
+    "creator": {
+      "type": "object",
+      "required": ["id", "display_name"],
+      "properties": {
+        "id": { "type": "string" },
+        "display_name": { "type": "string" }
+      }
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 20,
+      "description": "笔记标题,20 字内,符合博主标题模板"
+    },
+    "duration_seconds": {
+      "type": "integer",
+      "minimum": 60,
+      "maximum": 90
+    },
+    "hook": {
+      "type": "object",
+      "required": ["duration_seconds", "shots", "voiceover_first_line"],
+      "properties": {
+        "duration_seconds": {
+          "type": "string",
+          "examples": ["0-5 秒"]
+        },
+        "shots": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 6,
+          "items": {
+            "type": "string",
+            "description": "单个镜头描述"
+          }
+        },
+        "voiceover_first_line": {
+          "type": "string",
+          "description": "首句配音,定情绪用"
+        },
+        "bgm_note": {
+          "type": "string"
+        }
+      }
+    },
+    "body": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["timestamp", "voiceover", "shot_description"],
+        "properties": {
+          "timestamp": {
+            "type": "string",
+            "examples": ["5-15s"]
+          },
+          "segment_label": {
+            "type": "string",
+            "description": "对应博主视频结构中的段落名"
+          },
+          "voiceover": { "type": "string" },
+          "shot_description": { "type": "string" }
+        }
+      }
+    },
+    "product_insertion": {
+      "type": "object",
+      "required": [
+        "at_second",
+        "transition_line",
+        "sensory_description",
+        "action_shots"
+      ],
+      "properties": {
+        "at_second": { "type": "string" },
+        "transition_line": {
+          "type": "string",
+          "description": "产品出现前的过渡句,如「我现在要 X」"
+        },
+        "package_close_up_duration": { "type": "string" },
+        "sensory_description": {
+          "type": "string",
+          "description": "产品描述,必须包含至少 1 个比喻 + 1 个具体感官词"
+        },
+        "action_shots": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "callback_at_ending": {
+          "type": "string",
+          "description": "结尾回扣的口播(Catherine 必填,凑活活可选)"
+        }
+      }
+    },
+    "cta": {
+      "type": "object",
+      "required": ["style", "voiceover"],
+      "properties": {
+        "style": {
+          "type": "string",
+          "enum": ["留白式", "戏剧化感受式", "自嘲总结式", "回扣式"]
+        },
+        "voiceover": { "type": "string" }
+      }
+    },
+    "compliance_notes": {
+      "type": "array",
+      "description": "本脚本拍摄时博主需要特别注意的措辞",
+      "items": { "type": "string" }
+    },
+    "storyboard": {
+      "type": "array",
+      "minItems": 6,
+      "description": "分镜表,至少 6 镜",
+      "items": {
+        "type": "object",
+        "required": [
+          "shot_number",
+          "duration_seconds",
+          "visual_description",
+          "voiceover_or_subtitle",
+          "props_and_scene",
+          "shooting_difficulty"
+        ],
+        "properties": {
+          "shot_number": { "type": "integer", "minimum": 1 },
+          "duration_seconds": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 15
+          },
+          "visual_description": { "type": "string" },
+          "voiceover_or_subtitle": { "type": "string" },
+          "props_and_scene": { "type": "string" },
+          "shooting_difficulty": {
+            "type": "string",
+            "enum": ["低", "中", "高"]
+          }
+        }
+      }
+    },
+    "compliance_report": {
+      "type": "object",
+      "required": [
+        "compliance_status",
+        "extreme_words_hits",
+        "medical_implication_hits",
+        "llm_judge_score"
+      ],
+      "properties": {
+        "compliance_status": {
+          "type": "string",
+          "enum": ["通过", "警告", "拦截"]
+        },
+        "extreme_words_hits": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "word": { "type": "string" },
+              "field": { "type": "string" },
+              "suggestion": { "type": "string" }
+            }
+          }
+        },
+        "medical_implication_hits": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "llm_judge_score": {
+          "type": "object",
+          "properties": {
+            "overall_compliance": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 10
+            },
+            "creator_style_similarity": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 10
+            },
+            "naturalness": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 10
+            }
+          }
+        },
+        "recommendations": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}
