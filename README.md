@@ -158,4 +158,4 @@ git commit -m "feat: ..."   # Conventional Commits
 
 ## License
 
-仅作为实习作业交付，未对外开源。
+仅作为实习笔试交付。
