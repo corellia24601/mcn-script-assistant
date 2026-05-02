@@ -1,7 +1,6 @@
 # mcn-script-assistant
 
 MCN 商单短视频脚本自动化生成的 Skill，配套 Coze 工作流、飞书多维表格写入脚本和质检流水线。
-本仓库是 AOI 部门 AI Agent 实习 48 小时实操测试的交付物。
 
 > **当前进度**：Skill 主体（`skills/mcn-script-assistant/`）已落位、端到端 pipeline 跑通；prompt 版本血缘已建（`prompts/main_generation_v3_final.md`）；触发评测桌面分析已写（`docs/eval-trigger-analysis.md`）。
 
