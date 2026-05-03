@@ -36,3 +36,7 @@ Thumbs.db
 output/sample_*
 repo.bundle
 skills/mcn-script-assistant/mcn-script-assistant/
+# 早前调试 D 盘 Python venv 时的临时目录
+test-venv/
+# 沙箱协作打的 git bundle，不上 GitHub
+repo.bundle
