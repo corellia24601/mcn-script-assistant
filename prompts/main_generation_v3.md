@@ -1,7 +1,7 @@
-# main_generation prompt · v3 final
+# main_generation prompt · v3
 
 > 提取自 `skills/mcn-script-assistant/scripts/run_pipeline.py::build_generation_prompt`。
-> 这是 Skill 当前实际投产用的脚本生成 prompt（v3），保留这份独立文档是为了和后续版本（v4、v5……）做 diff 对比，建立 prompt 版本血缘。
+> 这不是当前prompt版本。Skill 当前实际投产用的脚本生成 prompt 是（v4），保留v3是为了和后续版本（v4、v5……）做 diff 对比，建立 prompt 版本血缘。
 
 ## 元数据
 
